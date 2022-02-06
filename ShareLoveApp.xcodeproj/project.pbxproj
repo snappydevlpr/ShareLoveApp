@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B8CAC327AF51C900383985 /* ShareLoveAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAC227AF51C900383985 /* ShareLoveAppApp.swift */; };
+		43B8CAC527AF51C900383985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAC427AF51C900383985 /* ContentView.swift */; };
+		43B8CAC727AF51CC00383985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B8CAC627AF51CC00383985 /* Assets.xcassets */; };
+		43B8CACA27AF51CC00383985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B8CAC927AF51CC00383985 /* Preview Assets.xcassets */; };
+		43B8CAD427AF51CC00383985 /* ShareLoveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAD327AF51CC00383985 /* ShareLoveAppTests.swift */; };
+		43B8CADE27AF51CC00383985 /* ShareLoveAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CADD27AF51CC00383985 /* ShareLoveAppUITests.swift */; };
+		43B8CAE027AF51CC00383985 /* ShareLoveAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CADF27AF51CC00383985 /* ShareLoveAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43B8CAD027AF51CC00383985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B8CAB727AF51C900383985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B8CABE27AF51C900383985;
+			remoteInfo = ShareLoveApp;
+		};
+		43B8CADA27AF51CC00383985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B8CAB727AF51C900383985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B8CABE27AF51C900383985;
+			remoteInfo = ShareLoveApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43B8CABF27AF51C900383985 /* ShareLoveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareLoveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B8CAC227AF51C900383985 /* ShareLoveAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveAppApp.swift; sourceTree = "<group>"; };
+		43B8CAC427AF51C900383985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43B8CAC627AF51CC00383985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43B8CAC927AF51CC00383985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43B8CACF27AF51CC00383985 /* ShareLoveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareLoveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B8CAD327AF51CC00383985 /* ShareLoveAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveAppTests.swift; sourceTree = "<group>"; };
+		43B8CAD927AF51CC00383985 /* ShareLoveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareLoveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B8CADD27AF51CC00383985 /* ShareLoveAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveAppUITests.swift; sourceTree = "<group>"; };
+		43B8CADF27AF51CC00383985 /* ShareLoveAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLoveAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B8CABC27AF51C900383985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CACC27AF51CC00383985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CAD627AF51CC00383985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B8CAB627AF51C900383985 = {
+			isa = PBXGroup;
+			children = (
+				43B8CAC127AF51C900383985 /* ShareLoveApp */,
+				43B8CAD227AF51CC00383985 /* ShareLoveAppTests */,
+				43B8CADC27AF51CC00383985 /* ShareLoveAppUITests */,
+				43B8CAC027AF51C900383985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B8CAC027AF51C900383985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CABF27AF51C900383985 /* ShareLoveApp.app */,
+				43B8CACF27AF51CC00383985 /* ShareLoveAppTests.xctest */,
+				43B8CAD927AF51CC00383985 /* ShareLoveAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B8CAC127AF51C900383985 /* ShareLoveApp */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CAC227AF51C900383985 /* ShareLoveAppApp.swift */,
+				43B8CAC427AF51C900383985 /* ContentView.swift */,
+				43B8CAC627AF51CC00383985 /* Assets.xcassets */,
+				43B8CAC827AF51CC00383985 /* Preview Content */,
+			);
+			path = ShareLoveApp;
+			sourceTree = "<group>";
+		};
+		43B8CAC827AF51CC00383985 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CAC927AF51CC00383985 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43B8CAD227AF51CC00383985 /* ShareLoveAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CAD327AF51CC00383985 /* ShareLoveAppTests.swift */,
+			);
+			path = ShareLoveAppTests;
+			sourceTree = "<group>";
+		};
+		43B8CADC27AF51CC00383985 /* ShareLoveAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CADD27AF51CC00383985 /* ShareLoveAppUITests.swift */,
+				43B8CADF27AF51CC00383985 /* ShareLoveAppUITestsLaunchTests.swift */,
+			);
+			path = ShareLoveAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B8CABE27AF51C900383985 /* ShareLoveApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B8CAE327AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveApp" */;
+			buildPhases = (
+				43B8CABB27AF51C900383985 /* Sources */,
+				43B8CABC27AF51C900383985 /* Frameworks */,
+				43B8CABD27AF51C900383985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareLoveApp;
+			productName = ShareLoveApp;
+			productReference = 43B8CABF27AF51C900383985 /* ShareLoveApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43B8CACE27AF51CC00383985 /* ShareLoveAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B8CAE627AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveAppTests" */;
+			buildPhases = (
+				43B8CACB27AF51CC00383985 /* Sources */,
+				43B8CACC27AF51CC00383985 /* Frameworks */,
+				43B8CACD27AF51CC00383985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B8CAD127AF51CC00383985 /* PBXTargetDependency */,
+			);
+			name = ShareLoveAppTests;
+			productName = ShareLoveAppTests;
+			productReference = 43B8CACF27AF51CC00383985 /* ShareLoveAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43B8CAD827AF51CC00383985 /* ShareLoveAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B8CAE927AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveAppUITests" */;
+			buildPhases = (
+				43B8CAD527AF51CC00383985 /* Sources */,
+				43B8CAD627AF51CC00383985 /* Frameworks */,
+				43B8CAD727AF51CC00383985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B8CADB27AF51CC00383985 /* PBXTargetDependency */,
+			);
+			name = ShareLoveAppUITests;
+			productName = ShareLoveAppUITests;
+			productReference = 43B8CAD927AF51CC00383985 /* ShareLoveAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B8CAB727AF51C900383985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					43B8CABE27AF51C900383985 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					43B8CACE27AF51CC00383985 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 43B8CABE27AF51C900383985;
+					};
+					43B8CAD827AF51CC00383985 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 43B8CABE27AF51C900383985;
+					};
+				};
+			};
+			buildConfigurationList = 43B8CABA27AF51C900383985 /* Build configuration list for PBXProject "ShareLoveApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B8CAB627AF51C900383985;
+			productRefGroup = 43B8CAC027AF51C900383985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B8CABE27AF51C900383985 /* ShareLoveApp */,
+				43B8CACE27AF51CC00383985 /* ShareLoveAppTests */,
+				43B8CAD827AF51CC00383985 /* ShareLoveAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B8CABD27AF51C900383985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B8CACA27AF51CC00383985 /* Preview Assets.xcassets in Resources */,
+				43B8CAC727AF51CC00383985 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CACD27AF51CC00383985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CAD727AF51CC00383985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B8CABB27AF51C900383985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B8CAC527AF51C900383985 /* ContentView.swift in Sources */,
+				43B8CAC327AF51C900383985 /* ShareLoveAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CACB27AF51CC00383985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B8CAD427AF51CC00383985 /* ShareLoveAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B8CAD527AF51CC00383985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B8CAE027AF51CC00383985 /* ShareLoveAppUITestsLaunchTests.swift in Sources */,
+				43B8CADE27AF51CC00383985 /* ShareLoveAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43B8CAD127AF51CC00383985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B8CABE27AF51C900383985 /* ShareLoveApp */;
+			targetProxy = 43B8CAD027AF51CC00383985 /* PBXContainerItemProxy */;
+		};
+		43B8CADB27AF51CC00383985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B8CABE27AF51C900383985 /* ShareLoveApp */;
+			targetProxy = 43B8CADA27AF51CC00383985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43B8CAE127AF51CC00383985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B8CAE227AF51CC00383985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B8CAE427AF51CC00383985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShareLoveApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43B8CAE527AF51CC00383985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShareLoveApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43B8CAE727AF51CC00383985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareLoveApp.app/ShareLoveApp";
+			};
+			name = Debug;
+		};
+		43B8CAE827AF51CC00383985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareLoveApp.app/ShareLoveApp";
+			};
+			name = Release;
+		};
+		43B8CAEA27AF51CC00383985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShareLoveApp;
+			};
+			name = Debug;
+		};
+		43B8CAEB27AF51CC00383985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SnappyDevlpr.ShareLoveAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShareLoveApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B8CABA27AF51C900383985 /* Build configuration list for PBXProject "ShareLoveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B8CAE127AF51CC00383985 /* Debug */,
+				43B8CAE227AF51CC00383985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B8CAE327AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B8CAE427AF51CC00383985 /* Debug */,
+				43B8CAE527AF51CC00383985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B8CAE627AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B8CAE727AF51CC00383985 /* Debug */,
+				43B8CAE827AF51CC00383985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B8CAE927AF51CC00383985 /* Build configuration list for PBXNativeTarget "ShareLoveAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B8CAEA27AF51CC00383985 /* Debug */,
+				43B8CAEB27AF51CC00383985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B8CAB727AF51C900383985 /* Project object */;
+}
