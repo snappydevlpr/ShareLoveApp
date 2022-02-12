@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct ShareLoveAppApp: App {
     var body: some Scene {
+    
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView()
+            }
         }
     }
 }
