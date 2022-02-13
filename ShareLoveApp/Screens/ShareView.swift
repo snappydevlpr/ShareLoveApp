@@ -39,7 +39,7 @@ struct ShareView: View {
                 }
                 .padding()
                 .opacity(isAnimating ? 1:0)
-                .offset(y: isAnimating ? 0 :-40)
+                .offset(x: 0, y: isAnimating ? 0 :-40)
                 .animation(.easeOut(duration:1), value: isAnimating)
                 //end of header message
                 
@@ -104,13 +104,19 @@ struct ShareView: View {
                                     }
                                     // allows button to snap back
                                     .onEnded{ _ in
-                                        if buttonOffset > buttonWidth/2{
-                                            buttonOffset = buttonWidth - 90
-                                            isShareLoveViewActive = false
+                                        
+                                        withAnimation(Animation.easeOut(duration: 0.4))
+                                        {
+                                            if buttonOffset > buttonWidth/2{
+                                                buttonOffset = buttonWidth - 90
+                                                isShareLoveViewActive = false
+                                            }
+                                            else{
+                                                buttonOffset = 0
+                                            }
                                         }
-                                        else{
-                                            buttonOffset = 0
-                                        }
+                                        
+                                        
                                         
                                     }
                             )// drag gesture
@@ -120,7 +126,7 @@ struct ShareView: View {
                 .frame(width: buttonWidth, height: 80, alignment: .center)
                 .padding()
                 .opacity(isAnimating ? 1:0)
-                .offset(y: isAnimating ? 0:40)
+                .offset(x:0, y: isAnimating ? 0:40)
                 .animation(.easeOut(duration:1),value: isAnimating)
                 //: FOOTER
             }
