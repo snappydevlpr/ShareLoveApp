@@ -50,6 +50,7 @@
 		43B8CAEC27B36B4500383985 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		43B8CAEE27B36B6500383985 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		43B8CAF127B83CEC00383985 /* CirclesDecal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesDecal.swift; sourceTree = "<group>"; };
+		43B8CAF627B88CAA00383985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +101,11 @@
 		43B8CAC127AF51C900383985 /* ShareLoveApp */ = {
 			isa = PBXGroup;
 			children = (
+				43B8CAF627B88CAA00383985 /* Info.plist */,
+				43B8CAF527B87DB900383985 /* Utilities */,
+				43B8CAF327B87D4600383985 /* Sounds */,
 				43B8CAC227AF51C900383985 /* ShareLoveAppApp.swift */,
-				43B8CAC427AF51C900383985 /* ContentView.swift */,
-				43B8CAEC27B36B4500383985 /* HomeView.swift */,
-				43B8CAEE27B36B6500383985 /* ShareView.swift */,
+				43B8CAF427B87D8000383985 /* Screens */,
 				43B8CAF027B4BC6100383985 /* Views */,
 				43B8CAC627AF51CC00383985 /* Assets.xcassets */,
 				43B8CAC827AF51CC00383985 /* Preview Content */,
@@ -142,6 +144,30 @@
 				43B8CAF127B83CEC00383985 /* CirclesDecal.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		43B8CAF327B87D4600383985 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		43B8CAF427B87D8000383985 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				43B8CAEC27B36B4500383985 /* HomeView.swift */,
+				43B8CAEE27B36B6500383985 /* ShareView.swift */,
+				43B8CAC427AF51C900383985 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		43B8CAF527B87DB900383985 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,9 +467,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShareLoveApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareLoveApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,9 +496,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShareLoveApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareLoveApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

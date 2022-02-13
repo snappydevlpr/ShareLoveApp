@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @AppStorage("share") var isShareLoveViewActive: Bool = false;
+
     var body: some View {
         VStack(spacing: 20){
             //header
@@ -30,13 +32,12 @@ struct HomeView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Spacer()
-
-            //footer
-                NavigationLink(destination: ContentView()){
-                        Text("Restart")
-                            .fontWeight(.bold)
-                            .font(.system(.title3,design: .rounded))
-                }
+            
+            Button(action: {
+                isShareLoveViewActive = true;
+            }){
+                Text("Restart")
+            }
                 .controlSize(.large)
                 .buttonBorderShape(.capsule)
                 .buttonStyle(.borderedProminent)
