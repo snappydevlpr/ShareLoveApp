@@ -17,6 +17,7 @@
 		43B8CAED27B36B4500383985 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAEC27B36B4500383985 /* HomeView.swift */; };
 		43B8CAEF27B36B6500383985 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAEE27B36B6500383985 /* ShareView.swift */; };
 		43B8CAF227B83CEC00383985 /* CirclesDecal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAF127B83CEC00383985 /* CirclesDecal.swift */; };
+		43B8CAF827B98A2100383985 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8CAF727B98A2100383985 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		43B8CAEE27B36B6500383985 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		43B8CAF127B83CEC00383985 /* CirclesDecal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesDecal.swift; sourceTree = "<group>"; };
 		43B8CAF627B88CAA00383985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		43B8CAF727B98A2100383985 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		43B8CAF527B87DB900383985 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				43B8CAF727B98A2100383985 /* ShareSheet.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B8CAEF27B36B6500383985 /* ShareView.swift in Sources */,
+				43B8CAF827B98A2100383985 /* ShareSheet.swift in Sources */,
 				43B8CAF227B83CEC00383985 /* CirclesDecal.swift in Sources */,
 				43B8CAED27B36B4500383985 /* HomeView.swift in Sources */,
 				43B8CAC527AF51C900383985 /* ContentView.swift in Sources */,

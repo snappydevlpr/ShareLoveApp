@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+
 struct HomeView: View {
     @AppStorage("share") var isShareLoveViewActive: Bool = false;
+    @State private var isAnimating: Bool = false;
 
     var body: some View {
         VStack(spacing: 20){
-            //header
+            //Mark: - HEADER
             
             Spacer()
             ZStack{
@@ -21,7 +23,6 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
-                
             }
             
             //center
@@ -34,7 +35,7 @@ struct HomeView: View {
             Spacer()
             
             Button(action: {
-                isShareLoveViewActive = true;
+                ShareLoveApp.actionSheet()
             }){
                 Text("Restart")
             }
@@ -43,6 +44,9 @@ struct HomeView: View {
                 .buttonStyle(.borderedProminent)
             
         }
+        .onAppear(perform: {
+            isAnimating = true
+        })
     }
 }
 
