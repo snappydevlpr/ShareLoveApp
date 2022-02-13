@@ -16,12 +16,12 @@ struct ShareView: View {
 
     //this property will represent the offset value in horizontal direction
     @State private var  buttonOffset: CGFloat = 0;
-    
+    @State private var isAnimating: Bool = false;
     
     // Mark: - body
     var body: some View {
         ZStack{
-            Color("ColorBlue")
+            Color("Color_blue")
             .ignoresSafeArea(.all,edges: .all)
             VStack(spacing: 20){
                 //Mark: - header message
@@ -38,6 +38,9 @@ struct ShareView: View {
                         .padding(.horizontal,10)
                 }
                 .padding()
+                .opacity(isAnimating ? 1:0)
+                .offset(y: isAnimating ? 0 :-40)
+                .animation(.easeOut(duration:1), value: isAnimating)
                 //end of header message
                 
                 Spacer()
@@ -49,6 +52,8 @@ struct ShareView: View {
                     Image("Hands-Show")
                         .resizable()
                         .scaledToFit()
+                        .opacity(isAnimating ? 1:0)
+                        .animation(.linear(duration:1), value: isAnimating)
                 }
                 Spacer()
                 
@@ -113,11 +118,18 @@ struct ShareView: View {
                         }//end of HSTACK
                 }
                 .frame(width: buttonWidth, height: 80, alignment: .center)
+                .padding()
+                .opacity(isAnimating ? 1:0)
+                .offset(y: isAnimating ? 0:40)
+                .animation(.easeOut(duration:1),value: isAnimating)
                 //: FOOTER
             }
                     
         }
-        .background(Color.blue)
+        //begins animation when ui appears
+        .onAppear(perform: {
+            isAnimating = true
+        })
 }
 }
 
