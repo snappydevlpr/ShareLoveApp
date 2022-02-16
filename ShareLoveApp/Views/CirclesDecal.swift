@@ -13,7 +13,7 @@ struct CirclesDecal: View {
     
     @State var shapeColor: Color
     @State var ShapeOpacity:Double
-    
+    @State var isAnimating: Bool = false
     var body: some View {
         //circle background graphic
         ZStack{
@@ -24,6 +24,13 @@ struct CirclesDecal: View {
                 .stroke(shapeColor.opacity(ShapeOpacity),lineWidth:80)
                 .frame(width: 260, height: 260, alignment: .center)
         }
+        .blur(radius: isAnimating ?0:10)
+        .opacity(isAnimating ?1:0)
+        .scaleEffect(isAnimating ?1:0.5)
+        .animation(.easeOut(duration:1), value: isAnimating)
+        .onAppear(perform: {
+            isAnimating = true
+        })
     }
 }
 

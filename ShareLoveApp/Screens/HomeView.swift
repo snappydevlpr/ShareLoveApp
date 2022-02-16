@@ -23,6 +23,13 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
+                    .offset(y: isAnimating ?15:-15)
+                    .animation(
+                        Animation
+                            .easeInOut(duration:4)
+                            .repeatForever(),
+                            value:isAnimating
+                        )
             }
             
             //center
@@ -35,17 +42,25 @@ struct HomeView: View {
             Spacer()
             
             Button(action: {
-                ShareLoveApp.actionSheet()
+                withAnimation{
+                  //  ShareLoveApp.actionSheet()
+                    isShareLoveViewActive = true
+                    
+                }
+                
             }){
-                Text("Restart")
+                Text("Share.")
             }
                 .controlSize(.large)
                 .buttonBorderShape(.capsule)
                 .buttonStyle(.borderedProminent)
             
         }
+        // allows animation to start 0.5 seconds after appearing on the screen
         .onAppear(perform: {
-            isAnimating = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute:{
+                isAnimating = true
+            })
         })
     }
 }
