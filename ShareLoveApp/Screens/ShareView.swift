@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ShareView: View {
     
-    //allows button size to change based on screen
-    @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80;
-    
+    //allows for animation
     @AppStorage("share") var isShareLoveViewActive: Bool = true;
 
     //this property will represent the offset value in horizontal direction
     @State private var  buttonOffset: CGFloat = 0;
     @State private var isAnimating: Bool = false;
+    
+    //allows button size to change based on screen
+    @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80;
+
+    //will allow swipe paralax feature
+    @State private var imageOffset: CGSize = .zero;
+    @State private var indicatorOpacity: Double = .zero;
+    @State private var textTitle:String = "Share.";
     
     // Mark: - body
     var body: some View {
@@ -27,10 +33,12 @@ struct ShareView: View {
                 //Mark: - header message
                 Spacer()
                 VStack{
-                    Text("Share.")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .foregroundColor(Color.white)
                         .fontWeight(.heavy)
+                        .transition(.opacity)
+                        .id(textTitle)
                     Text("Sharing love is sometimes more than just things. Sometimes the best way is to just let someone know you care.")
                         .foregroundColor(Color.white)
                         .fontWeight(.light)
@@ -48,13 +56,49 @@ struct ShareView: View {
                 ZStack{
                     
                     CirclesDecal(shapeColor: .white, ShapeOpacity: 0.2)
+                        .offset(x:imageOffset.width * -1)
+                        .blur(radius: abs(imageOffset.width/5))
+                        .animation(.easeOut(duration:1), value: imageOffset)
                     //image show stopper
                     Image("Hands-Show")
                         .resizable()
                         .scaledToFit()
                         .opacity(isAnimating ? 1:0)
                         .animation(.linear(duration:1), value: isAnimating)
+                        .offset(x:imageOffset.width*1.2,y:0)
+                        .rotationEffect(.degrees(Double(imageOffset.width/20)))
+                        .gesture(DragGesture()
+                            .onChanged{gesture in
+                                if abs(imageOffset.width) <= 150 {
+                                    imageOffset = gesture.translation
+                                    withAnimation(.linear(duration:0.25)){
+                                        indicatorOpacity = 0
+                                        textTitle = "Give."
+                                    }
+                                    
+                                }
+                            }
+                            .onEnded{_ in
+                            imageOffset = .zero
+                            withAnimation(.linear(duration:0.25)){
+                                indicatorOpacity = 1
+                                textTitle = "Share."
+                            }
+                            }
+                        )
+                        .animation(.easeOut(duration: 1), value: imageOffset)
                 }
+                
+                .overlay(
+                    Image(systemName: "arrow.left.and.right.circle")
+                        .font(.system(size:44,weight: .ultraLight))
+                        .foregroundColor(.white)
+                        .offset(y:30)
+                        .opacity(isAnimating ?1:0)
+                        .animation(.easeOut(duration: 2).delay(2), value: isAnimating)
+                        .opacity(indicatorOpacity)
+                    ,alignment: .bottom
+                )
                 Spacer()
                 
                 //Mark: - FOOTER
