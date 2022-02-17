@@ -152,6 +152,7 @@ struct ShareView: View {
                                         withAnimation(Animation.easeOut(duration: 0.4))
                                         {
                                             if buttonOffset > buttonWidth/2{
+                                                playSound(sound: "chimeup", type:"mp3")
                                                 buttonOffset = buttonWidth - 90
                                                 isShareLoveViewActive = false
                                             }
@@ -180,6 +181,7 @@ struct ShareView: View {
         .onAppear(perform: {
             isAnimating = true
         })
+        .preferredColorScheme(.dark)
 }
 }
 

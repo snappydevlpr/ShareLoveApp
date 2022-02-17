@@ -44,6 +44,7 @@ struct HomeView: View {
             Button(action: {
                 withAnimation{
                   //  ShareLoveApp.actionSheet()
+                    playSound(sound: "success", type: "m4a")
                     isShareLoveViewActive = true
                     
                 }
