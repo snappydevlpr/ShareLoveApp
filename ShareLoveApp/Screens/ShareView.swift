@@ -24,6 +24,9 @@ struct ShareView: View {
     @State private var indicatorOpacity: Double = .zero;
     @State private var textTitle:String = "Share.";
     
+    //haptic feedback
+    let hapticFeedback = UINotificationFeedbackGenerator()
+    
     // Mark: - body
     var body: some View {
         ZStack{
@@ -152,12 +155,14 @@ struct ShareView: View {
                                         withAnimation(Animation.easeOut(duration: 0.4))
                                         {
                                             if buttonOffset > buttonWidth/2{
+                                                hapticFeedback.notificationOccurred(.success)
                                                 playSound(sound: "chimeup", type:"mp3")
                                                 buttonOffset = buttonWidth - 90
                                                 isShareLoveViewActive = false
                                             }
                                             else{
                                                 buttonOffset = 0
+                                                hapticFeedback.notificationOccurred(.warning)
                                             }
                                         }
                                         
